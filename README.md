@@ -1,7 +1,5 @@
 # git
-## git 공부
-
-깃 정리 (로컬)
+## 깃 정리 (로컬)
 
 1. 깃을 설치하면 로컬에서 돌아간다.
 2. 로컬에서 .git init를 하여 초기 값을 설정한다.
@@ -22,3 +20,36 @@
 17. git branch
 18. git switch "master"
 
+## 깃 정리 (github)
+
+1. 깃허브 사이트에서 만든 레포에서 add 버튼에 있는 URL의 git 주소를 가져온다.
+```
+https://github.com/leonadro-3/e-shop.git
+```
+
+2. 다음 과정을 거친다.  
+```
+PS C:\Users\82106\Desktop\backend> git remote add origin https://github.com/leonadro-3/e-shop.git
+PS C:\Users\82106\Desktop\backend> git remote -v
+origin  https://github.com/leonadro-3/e-shop.git (fetch)
+origin  https://github.com/leonadro-3/e-shop.git (push)
+PS C:\Users\82106\Desktop\backend> git branch
+* master
+PS C:\Users\82106\Desktop\backend> git push origin master
+Enumerating objects: 993, done.
+Counting objects: 100% (993/993), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (939/939), done.
+Writing objects: 100% (993/993), 1013.77 KiB | 1.62 MiB/s, done.
+Total 993 (delta 157), reused 0 (delta 0), pack-reused 0 (from 0)     
+remote: Resolving deltas: 100% (157/157), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:     
+remote:      https://github.com/leonadro-3/e-shop/pull/new/master     
+remote:
+To https://github.com/leonadro-3/e-shop.git
+ * [new branch]      master -> master
+PS C:\Users\82106\Desktop\backend> 
+```
+
+3. 자동으로 main과 master 브런치가 분리되어 업로드 된다.

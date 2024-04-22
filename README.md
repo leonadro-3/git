@@ -53,3 +53,25 @@ PS C:\Users\82106\Desktop\backend>
 ```
 
 3. 자동으로 main과 master 브런치가 분리되어 업로드 된다.
+
+
+## 깃 오류
+
+```
+PS C:\Users\82106\Desktop\backend> git push orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\82106\Desktop\backend> 
+```
+
+로컬에서 작업한 것들을 깃허브로 업로드하기 위해 push를 했지만 오류가 뜬다.  
+
+```
+PS C:\Users\82106\Desktop\backend> git push origin master
+```
+
+철자가 틀렸다.  
+
